@@ -3,7 +3,7 @@ public class Main {
         // Задача 1
         System.out.println("Задача 1");
 
-        for (int i = 1; i <= 10; i++){
+        for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
         // Задача 2
@@ -15,7 +15,7 @@ public class Main {
         // Задача 3
         System.out.println("Задача 3");
 
-        for (int i = 0; i <= 17; i = i + 2){
+        for (int i = 0; i <= 17; i = i + 2) {
             System.out.println(i);
         }
         // Задача 4
@@ -61,94 +61,109 @@ public class Main {
         int i = 1;
         while (total <= 1_495_000) {
             i = i + 1;
-            total = total + total/100;
+            total = total + total / 100;
             total = total + salary;
             System.out.println("Месяц - " + i + ", сумма накоплений равна " + total + " рублей. ");
         }
 
         // Задача 2
         System.out.println("Задача 2");
-        int Q = 1;
-        while (Q <= 10){
-            System.out.println("1 2 3 4 5 6 7 8 9 10");
-        if ( Q <= 10 ) {
-            break;}
+        int q = 1;
+        for (; q <= 10; q++) {
+            System.out.print(q + " ");
         }
+
         System.out.println();
-        for (Q = 10; Q >= 0; Q-- ){
-            System.out.print(Q + " ");
+        for(q =10;q >=0;q--) {
+        System.out.print(q + " ");
         }
         System.out.println();
 
-        // Задача 3
+    // Задача 3
         System.out.println("Задача 3");
 
-        int Y = 12_000_000;
-        int diffPeople = 1000 / (18 - 7);
-        for(int year = 1; year <= 10; year++ ){
-            Y = Y + diffPeople;
-            System.out.println("Год - " + year + " , население = " + Y);
-        }
+    int Y = 12_000_000;
+    int diffPeople = 1000 / (18 - 7);
+        for(
+    int year = 1;
+    year <=10;year++)
 
-        // Задача 4
+    {
+        Y = Y + diffPeople;
+        System.out.println("Год - " + year + " , население = " + Y);
+    }
+
+    // Задача 4
         System.out.println("Задача 4");
 
 
-        int percentageOfTheDeposit = (15_000/100) * 7;
-        total = 15000;
-        for (int month = 1; total <= 12_000_000; month++) {
-            total = total + percentageOfTheDeposit;
-            System.out.println("Месяц - " + month + ", сумма накоплений равна " + total + " рублей. ");
-        }
+    int percentageOfTheDeposit = (15_000 / 100) * 7;
+    total =15000;
+        for(
+    int month = 1;
+    total <=12_000_000;month++)
 
-        // Задача 5
+    {
+        total = total + percentageOfTheDeposit;
+        System.out.println("Месяц - " + month + ", сумма накоплений равна " + total + " рублей. ");
+    }
+
+    // Задача 5
         System.out.println("Задача 5");
-        total = 15000;
-        percentageOfTheDeposit = (15_000/100) * 7;
-        for (int month = 1; total <= 12_000_000; month++) {
-            total = total + percentageOfTheDeposit;
-            if( month % 6 == 0){
+    total =15000;
+    percentageOfTheDeposit =(15_000/100)*7;
+        for(
+    int month = 1;
+    total <=12_000_000;month++)
+
+    {
+        total = total + percentageOfTheDeposit;
+        if (month % 6 == 0) {
             System.out.println("Месяц - " + month + ", сумма накоплений равна " + total + " рублей. ");
-            }
         }
+    }
 
-        // Задача 6
+    // Задача 6
         System.out.println("Задача 6");
-        total = 15000;
-        percentageOfTheDeposit = (15_000/100) * 7;
-        for (int month = 1; total <= 12_000_000; month++) {
-            total = total + percentageOfTheDeposit;
-            if (month % 6 == 0 && month <= 108) {
-                System.out.println("Месяц - " + month + ", сумма накоплений равна " + total + " рублей. ");
-            } // 9 лет - 108 месяцев
-        }
-        // Задача 7
-        System.out.println("Задача 7");
-        int dayOfWeek = 5;
-        for (; dayOfWeek <= 31; dayOfWeek++){
-            if (dayOfWeek % 7 == 0) {
-                System.out.println("Сегодня пятница, " + dayOfWeek + " -е число. Необходимо подготовить отчет");
-            } else {
-                System.out.println(" Отчёт делать не нужно");
-            } // Вроде для понятности надо написать было каждый день недели, но в условиях к задаче этого не было =)
-        }
+    total =15000;
+    percentageOfTheDeposit =(15_000/100)*7;
+        for(
+    int month = 1;
+    total <=12_000_000;month++)
 
-        // Задача 8
+    {
+        total = total + percentageOfTheDeposit;
+        if (month % 6 == 0 && month <= 108) {
+            System.out.println("Месяц - " + month + ", сумма накоплений равна " + total + " рублей. ");
+        } // 9 лет - 108 месяцев
+    }
+    // Задача 7
+        System.out.println("Задача 7");
+    int dayOfWeek = 2;
+        for(;dayOfWeek <=31;dayOfWeek++)
+
+    {
+        if (dayOfWeek % 7 == 0) {
+            System.out.println("Сегодня пятница, " + dayOfWeek + " -е число. Необходимо подготовить отчет");
+        } else {
+            System.out.println(" Отчёт делать не нужно");
+        } // Вроде для понятности надо написать было каждый день недели, но в условиях к задаче этого не было =)
+    }
+
+    // Задача 8
         System.out.println("Задача 8!");
 
 
-        for (int flightComet = 0; flightComet < 2124; flightComet = flightComet + 79) {
-            if ((flightComet % 79 == 0 && flightComet > 1824) && flightComet < 2224) {
-            System.out.println(flightComet); }
+        for(
+    int flightComet = 0;
+    flightComet< 2124;flightComet =flightComet +79)
+
+    {
+        if ((flightComet % 79 == 0 && flightComet > 1824) && flightComet < 2224) {
+            System.out.println(flightComet);
         }
-
-
-
-
-
-
-
-
-
     }
+
+
+}
 }
